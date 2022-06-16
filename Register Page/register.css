@@ -1,0 +1,181 @@
+/* Styling Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    background-color: #f6f6f6;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Styling Top Section */
+div #top {
+    margin-bottom: 31px;
+    text-align: center;
+}
+
+#logo {
+    width: 130px;    
+    height: 28px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b3a49;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+}
+
+
+/* Styling Bottom Section */
+form {
+    background-color: #fff;
+    padding: 46px 72px 35px 72px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(131, 137, 160, 0.2);
+    width: 650px;    
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.rows {
+    width: 233px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: rgba(84,98,120,.7);
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+}
+
+input, select  {
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    border-bottom:1.6px solid #afafaf;
+    border-color: rgba(124,136,157,.15);
+    border-width: 0 0 1.6px 0;
+    color: #1b1d1c;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13.5px 0;
+    outline: none;
+    display: block;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #f5a623;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+option {
+    font-family: 'Lato', sans-serif;
+    color: #1b1d1c;
+    font-size: 15px;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    margin-top: 13px;
+    width: 100%;
+    background-color: #f5a623;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+    padding: 12px 0;
+    border: none;
+    box-shadow: 0 1px 2px 0 hsla(0, 0%, 84%, 0.22);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+button:hover {
+    background-color: #c88009;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+p {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    color: #7c889d;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+p span a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+p span a:hover {
+    text-decoration: underline;
+}
+#error_pwd, #error_select {
+    color: red;
+    font-size: 12px;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width:700px) {
+    /* Styling Page */
+    body {
+        padding: 0 15px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    /* Styling Top Section */
+    h1 {
+        font-size: 18px;
+        margin-bottom: 34px;
+    }
+
+    /* Styling Form Section */
+    form {
+        width: 100%;
+        padding: 22px 24px 12px 24px;
+    }
+
+    .form-control {
+        flex-direction: column;
+    }
+
+    .rows {
+        width: 100%;
+    }
+
+    .first {
+        margin-bottom: 18px;
+    }
+
+    input, select {
+        padding: 13.7px 0;
+    }
+
+    button {
+        padding: 13.7px 0;
+    }
+
+}

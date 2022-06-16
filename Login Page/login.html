@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be truly borderless</title>
+    <!-- Favicon -->
+    <link rel="icon"  href="./images/favicon.png" type="images/x-icon">
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Google Font(Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Section -->
+    <div id="top">
+
+        <div><img src="./images/Barter Logo.png" alt="barter-logo" id="logo"></div>
+        <div><h1>Login to your barter account</h1></div>
+
+    </div>
+
+    <!-- Form Section -->
+    <div class="bottom">
+
+        <form>
+
+            <div class="form-control">
+
+                <label for="email/phone">EMAIL ADDRESS / PHONE NUMBER</label> 
+                <input type="email" name="email/phone" id="email" class="enter"> 
+                <div id="error_email"></div>
+            
+            </div>
+            
+            <div class="form-control">
+                <label for="password">ENTER YOUR PASSWORD</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, 
+                and at least 8 or more characters" class="enter">
+            </div>
+            
+            <p class="forgot"><a href="https://barter.me/forgotpassword">Forgot password?</a></p>
+
+            <button onclick="validate()">Log in</button>
+
+            <div>
+                <p class="register">Don't have an account? <a href="../Register Page/register.html">Register</a></p>
+            </div>
+           
+
+        </form>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

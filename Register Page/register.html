@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be truly borderless</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./register.css" type="text/css">
+    <!-- Google Font(Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Top Section of Page Starts Here -->
+    <div id="top-section">
+        
+        <div id="top">
+            
+            <div><img src="./images/barter.svg" alt="barter" id="logo"></div>
+            <div><h1>Create your barter account</h1</div>
+        
+        </div>
+
+    </div>
+
+    <!-- Form Section of Page Starts Here  -->
+    <div id="bottom-section">
+
+        <form action="">
+
+            <div class="form-control">
+
+                <div class="rows first">
+
+                    <div class="label">
+                        <label for="fname">First Name</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+
+                </div>
+
+                <div class="rows">
+
+                    <div class="label">
+                        <label for="lname">Last Name</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="form-control">
+
+                <div class="rows first">
+
+                    <div class="label">
+                        <label for="email">Email Address</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                </div>
+
+                <div class="rows">
+
+                    <div class="label">
+                        <label for="phone">Phone Number</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="tel" name="phone" id="phone" min="11" max="15" step="1" required>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="form-control">
+
+                <div class="rows first">
+
+                    <div class="label">
+                        <label for="Password">Password</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                </div>
+
+                <div class="rows">
+
+                    <div class="label">
+                        <label for="password2">Confirm Password</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="password" name="password2" id="password2" required>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="form-control">
+
+                <div class="rows first">
+
+                    <div class="label">
+                        <label for="country">Country</label>
+                    </div>
+    
+                    <div class="input">
+                        <select name="country" id="country" required>
+                            <option value="" selected>Select country</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="IR">Ireland</option>
+                            <option value="GH">Ghana</option>
+                            <option value="KE">Kenya</option>
+                            <option value="UG">Uganda</option>
+                            <option value="CA">Cameroon</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="FR">France</option>
+                            <option value="GE">Germany</option>
+                            <option value="IT">Italy</option>
+                            <option value="VI">Vietnam</option>
+                            <option value="BU">Burkina Faso</option>
+                            <option value="SE">Senegal</option>
+                            <option value="SA">South Africa</option>
+                            <option value="HU">Hungary</option>
+                            <option value="BE">Belgium</option>
+                            <option value="SW">Sweden</option>
+                            <option value="SP">Spain</option>
+                            <option value="SL">Slovakia</option>
+                            <option value="GR">Greece</option>
+                            <option value="RO">Romania</option>
+                            <option value="SV">Slovenia</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="CR">Croatia</option>
+                            <option value="ES">Estonia</option>
+                            <option value="PO">Portugal</option>
+                            <option value="FI">Finland</option>
+                            <option value="MA">Malta</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czechia</option>
+                            <option value="NE">Netherlands</option>
+                            <option value="PL">Poland</option>
+                            <option value="LI">Lithuania</option>
+                            <option value="LA">Latvia</option>
+                            <option value="BU">Bulgaria</option>
+                            <option value="DE">Denmark</option>
+                            <option value="AS">Austria</option>
+                            <option value="CA">Canada</option>
+                            <option value="UO">United States MINOR outlying Islands</option>
+                        </select>
+                    </div>
+                    <div id="error_select"></div>
+
+                </div>
+
+                <div class="rows">
+
+                    <div class="label">
+                        <label for="referral">Referral Code</label>
+                    </div>
+    
+                    <div class="input">
+                        <input type="text" name="referral" id="referral">
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="error_pwd"></div>
+
+            <div>
+
+                <button type="submit" onclick="validate()">Create account</button>
+
+                <p>Already have an account? <span><a href="../Login Page/login.html">Login</a> </span></p>
+
+            </div>
+            
+        </form>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

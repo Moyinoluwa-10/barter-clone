@@ -1,0 +1,603 @@
+/* Styling Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+/* Styling Header Section */
+.header { 
+    background-color: #f5a623; 
+    color: #12122c;
+    text-align: center;
+    font-size: 16px; 
+    line-height: 26px;
+    padding: 15px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+}   
+
+.header a {
+    color: #12122c;
+    margin-left: 1px;
+    font-weight: 900;
+}
+
+/* Styling Blank Page for Responsiveness */
+#blank {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    -webkit-transition: all 0.01s ease-in-out;
+    transition: all 0.01s ease-in-out;
+}
+
+/* Styling Main Section */
+main {
+    background-image: url(./images/homepage.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 701px;
+}
+
+/* Styling Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 1165px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    padding-right: 26px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+
+#logo {
+    width: 190px;
+    height: 52px;
+}
+
+#logo-head a:active {
+    outline: 2px solid #f5a623;
+    outline-offset: -5px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+li a {
+   text-decoration: none;
+   color: #333;
+   font-weight: 700;
+   transition: 0.3s ease-in;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+}
+
+li a:hover {
+    color: #f5a623;
+}
+
+/* Styling Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.01s ease-in-out;
+    transition: all 0.01s ease-in-out;
+    background-color: #333;
+}
+
+/* Styling Section */
+section {
+    text-align: center;
+}
+
+#section-top {
+    font-size: 60px;
+    font-weight: 900;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    margin-top: 38px;
+    line-height: 72px;
+}
+
+#section-middle {
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    margin-top: -43px;
+    margin-bottom: 56px;
+    line-height: 40px;
+}
+
+#section-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 102px;
+}
+
+/* Styling Download Options Buttons */
+.download {
+    width: 205.5px;
+    transition: transform 0.5s;
+}
+
+.download:hover {
+    transform: translateY(-5px);
+}
+
+.download:active {
+    outline: 2px solid #f5a623;
+    outline-offset: -4px;
+    border-radius: 7px;
+}
+
+/* Styling Changing Page Circles */
+#circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 82px;
+}
+
+#circle1 {
+    background-color: #f5a623;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+#circle2 {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+/* Styling Footerlike Section */
+#footer {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1150px;
+    max-width: 97%;
+    margin: 0 auto;
+}
+
+.foot {
+    font-size: 16.3px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+} 
+
+#footer-bottom a {
+    color: #333;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+#footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+#icons {
+    display: flex;
+    gap: 5px;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+
+i {
+    color: #333;
+    font-size: 20px;
+    padding: 0px 11px;
+}
+
+#icons a:active {
+    outline: 2px solid #f5a623;
+    outline-offset: 5px;
+}
+
+
+/* Responsiveness */
+@media screen and (min-width:790px) and (max-width:850px) {
+    /* Styling Navbar Section */
+    .nav-menu {
+        gap: 25px;
+    }
+
+    /* Styling Footerlike Section */
+    #footer {
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (min-width:550px) and (max-width:790px) {
+    /* Styling Main Section */
+    main {
+        height: 765px;
+    }
+    /* Styling Hamburger Section */
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        opacity: 1;
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        opacity: 1;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Styling Navbar Section */
+    .navbar {
+        padding-top: 12px;
+        padding-bottom: 17px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.1s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    li a {
+        font-weight: 900;
+    }
+
+    /* Styling Section */
+    #section-middle br {
+        display: none;
+    }
+
+    /* Styling Footerlike Section */
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #footer-top {
+        margin: 0;
+    }
+
+    #footer-bottom {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+
+    #icons {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:390px) and (max-width:550px) {
+    /* Styling Main Section */
+    main {
+        height: 715px;
+    }
+
+    /* Styling Header Section */
+    .header { 
+        font-size: 14px; 
+        line-height: 24px;
+    } 
+    
+    /* Styling Navbar Section */
+    .navbar {
+        padding-top: 17px;
+        padding-bottom: 24px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    li a {
+        font-weight: 900;
+    }
+
+    #logo {
+        width: 140px;
+        height: 35px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.1s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Styling Hamburger Section */
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        opacity: 1;
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        opacity: 1;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Styling Section */
+    #section-top {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    #section-middle {
+        font-size: 25px;
+        margin-top: -32px;
+        margin-bottom: 56px;
+        line-height: 32px;
+        padding: 0 15px;
+    }
+
+    #section-middle br {
+        display: none;
+    }
+
+    #section-bottom {
+        gap: 13px;
+        margin-top: -9px;
+        margin-bottom: 70px;
+    }
+
+    /* Styling Download Options Buttons */
+    .download {
+        width: 160px;
+        transition: transform 0.5s;
+    }
+
+    /* Styling Footerlike Section */
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #footer-top {
+        margin: 0;
+    }
+
+    #footer-bottom {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+
+    #icons {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:390px) {
+    /* Styling Main Section */
+    main {
+        height: 880px;
+    }
+
+    /* Styling Header Section */
+    .header { 
+        font-size: 14px; 
+        line-height: 24px;
+    } 
+    
+    /* Styling Navbar Section */
+    .navbar {
+        padding-top: 17px;
+        padding-bottom: 24px;
+    }
+
+    #logo {
+        width: 140px;
+        height: 35px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.1s;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    li a {
+        font-weight: 900;
+    }
+
+    /* Styling Hamburger Section */
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        opacity: 1;
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        opacity: 1;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* Styling Section */
+    #section-top {
+        font-size: 50px;
+        line-height: 62px;
+    }
+
+    #section-middle {
+        font-size: 25px;
+        margin-top: -32px;
+        margin-bottom: 56px;
+        line-height: 32px;
+        padding: 0 15px;
+    }
+
+    #section-middle br {
+        display: none;
+    }
+
+    #section-bottom {
+        gap: 13px;
+        margin-top: -9px;
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+
+    /* Styling Download Options Buttons */
+    .download {
+        width: 160px;
+        transition: transform 0.5s;
+    }
+
+    /* Styling Footerlike Section */
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #footer-top {
+        margin: 0;
+    }
+
+    #footer-bottom {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+
+    #icons {
+        margin: 0;
+    }
+
+}
