@@ -28,20 +28,9 @@ body {
     font-weight: 900;
 }
 
-/* Styling Blank Page for Responsiveness */
-#blank {
-    width: 100%;
-    height: 300px;
-    background-color: #1d222c;
-    position: absolute;
-    display: none;
-    -webkit-transition: all 0.01s ease-in-out;
-    transition: all 0.01s ease-in-out;
-}
-
 /* Styling Main Section */
 main {
-    background-image: url(./images/bg2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(./images/cards.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -102,6 +91,7 @@ li a:hover {
     display: none;
     cursor: pointer;
     margin-top: 10px;
+    z-index: 6;
 }
 
 .bar {
@@ -109,8 +99,8 @@ li a:hover {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.01s ease-in-out;
-    transition: all 0.01s ease-in-out;
+    -webkit-transition: transform 0.15s ease;
+    transition: transform 0.15s ease;
     background-color: #fff;
 }
 
@@ -254,49 +244,28 @@ i {
 }
 
 @media screen and (min-width:550px) and (max-width:790px) {
-    /* Styling Hamburger Section */
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        opacity: 1;
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(3) {
-        opacity: 1;
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
     /* Styling Navbar Section */
-    .navbar {
-        padding-top: 12px;
-        padding-bottom: 17px;
-    }
-
     .nav-menu {
         position: fixed;
-        left: -100%;
-        gap: 0;
+        z-index: 5;
+        top: 0;
+        left: 0;
         flex-direction: column;
-        background-color: #1d222c;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: white;
         width: 100%;
         height: 100%;
-        text-align: center;
-        transition: 0.1s;
+        margin: 0;
     }
 
-    .nav-item {
-        margin: 16px 0;
+    .navlinks {
+        display: none;
     }
 
-    .nav-menu.active {
-        left: 0;
+    .navlinks.active {
+        display: block;
     }
 
     li {
@@ -305,6 +274,29 @@ i {
 
     li a {
         font-weight: 900;
+        color: #000000;
+    }
+
+    /* Styling Hamburger Section */
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        background-color: #000000;
+        opacity: 1;
+        transform: translateY(8px) rotate(135deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        background-color: #000000;
+        opacity: 1;
+        transform: translateY(-8px) rotate(-135deg);
     }
 
     /* Styling Section */
@@ -347,9 +339,32 @@ i {
     } 
     
     /* Styling Navbar Section */
-    .navbar {
-        padding-top: 17px;
-        padding-bottom: 24px;
+    #logo {
+        width: 140px;
+        height: 35px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .navlinks.active {
+        display: block;
     }
 
     li {
@@ -358,31 +373,7 @@ i {
 
     li a {
         font-weight: 900;
-    }
-
-    #logo {
-        width: 140px;
-        height: 35px;
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        gap: 0;
-        flex-direction: column;
-        background-color: #1d222c;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: 0.1s;
-    }
-
-    .nav-item {
-        margin: 16px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
+        color: #000000;
     }
 
     /* Styling Hamburger Section */
@@ -396,15 +387,16 @@ i {
     }
 
     .hamburger.active .bar:nth-child(1) {
+        background-color: #000000;
         opacity: 1;
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(3) {
-        opacity: 1;
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(8px) rotate(135deg);
     }
 
+    .hamburger.active .bar:nth-child(3) {
+        background-color: #000000;
+        opacity: 1;
+        transform: translateY(-8px) rotate(-135deg);
+    }
 
     /* Styling Section */
     #section-top {
@@ -471,11 +463,6 @@ i {
     } 
     
     /* Styling Navbar Section */
-    .navbar {
-        padding-top: 17px;
-        padding-bottom: 24px;
-    }
-
     #logo {
         width: 140px;
         height: 35px;
@@ -483,24 +470,25 @@ i {
 
     .nav-menu {
         position: fixed;
-        left: -100%;
-        gap: 0;
+        z-index: 5;
+        top: 0;
+        left: 0;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
         background-color: white;
         width: 100%;
         height: 100%;
-        text-align: center;
-        transition: 0.1s;
-        justify-content: center;
-        align-content: center;
+        margin: 0;
     }
 
-    .nav-item {
-        margin: 16px 0;
+    .navlinks {
+        display: none;
     }
 
-    .nav-menu.active {
-        left: 0;
+    .navlinks.active {
+        display: block;
     }
 
     li {
@@ -509,6 +497,7 @@ i {
 
     li a {
         font-weight: 900;
+        color: #000000;
     }
 
     /* Styling Hamburger Section */
@@ -522,15 +511,16 @@ i {
     }
 
     .hamburger.active .bar:nth-child(1) {
+        background-color: #000000;
         opacity: 1;
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(135deg);
     }
     
     .hamburger.active .bar:nth-child(3) {
+        background-color: #000000;
         opacity: 1;
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-135deg);
     }
-
 
     /* Styling Section */
     #section-top {
