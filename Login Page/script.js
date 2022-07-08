@@ -1,3 +1,10 @@
+// Focus on email field on page load
+const email = document.getElementById('email') 
+
+window.onload = function() {
+  email.focus();
+}
+
 // Form Validation
 
 function validate(){
