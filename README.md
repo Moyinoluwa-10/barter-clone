@@ -22,11 +22,15 @@ You can read about our experience [here](https://kamet.hashnode.dev/portfolio-te
 
 ## :camera: Screenshots
 
-* ![Landing Page](./assets/images/homepage.png)
-* ![Landing Page(Dark Mode)](./assets/images/homepage2.png)
-* ![Register Page](./assets/images/register.png)
-* ![Login Page](./assets/images/login.png)
-* ![Student Ambassador Page](./assets/images/student.png)
+![Landing Page](./assets/images/homepage.png)
+
+![Landing Page(Dark Mode)](./assets/images/homepage2.png)
+
+![Register Page](./assets/images/register.png)
+
+![Login Page](./assets/images/login.png)
+
+![Student Ambassador Page](./assets/images/student.png)
 
 ## :signal_strength: Technologies
 
