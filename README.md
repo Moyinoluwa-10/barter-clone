@@ -13,7 +13,6 @@ You can read about our experience [here](https://kamet.hashnode.dev/portfolio-te
 ## :page_facing_up: Table of contents
 
 * [:zap: Barter Clone](#zap-barter-clone)
-	* [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
 	* [:camera: Screenshots](#camera-screenshots)
 	* [:signal_strength: Technologies](#signal_strength-technologies)
     * [:cool: Live-Solution](#cool-live-solution)
