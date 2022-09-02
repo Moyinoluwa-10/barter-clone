@@ -2,7 +2,7 @@
 
 Barter by Flutterwave is a lifestyle payment solution used by over 500,000 people to send money to and from Africa for free, receive money from abroad, create virtual cards for online shopping, pay bills and make instant payments online. 
 
-We found the web App exciting and decided to make a clone of it.
+We found the web App exciting and decided to make a clone of it. We created four(4) pages in all; the Landing page, sign in page, sign up page and the Student ambassador page.
 
 Original Site: https://barter.me/
 
