@@ -32,16 +32,15 @@
             <div class="form-control">
 
                 <label for="email/phone">EMAIL ADDRESS / PHONE NUMBER</label> 
-                <input type="email" name="email/phone" id="email" class="enter"> 
+                <input type="email" name="email/phone" id="email" autocomplete="email" class="enter"> 
                 <div id="error_email"></div>
             
             </div>
             
             <div class="form-control">
                 <label for="password">ENTER YOUR PASSWORD</label>
-                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                title="Must contain at least one number and one uppercase and lowercase letter, 
-                and at least 8 or more characters" class="enter">
+                <input type="password" id="password" name="password" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="enter">
             </div>
             
             <p class="forgot"><a href="https://barter.me/forgotpassword">Forgot password?</a></p>
