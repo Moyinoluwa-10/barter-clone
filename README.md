@@ -2,22 +2,24 @@
 
 Barter by Flutterwave is a lifestyle payment solution used by over 500,000 people to send money to and from Africa for free, receive money from abroad, create virtual cards for online shopping, pay bills and make instant payments online. 
 
-We found the web app exciting and decided to make a clone of it. We created four(4) pages in all: 
+We found the web app exciting and decided to make a clone of it. We created five(5) pages in all: 
 * The Landing Page 
 * The Register page 
-* The Login Page and 
+* The Login Page
+* The Forgot Password Page and
 * The Student Ambassador Page.
 
 You can read about our experience [here](https://kamet.hashnode.dev/portfolio-team-2-project-experience-frontend-html-css-and-javascript)
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Barter Clone](#zap-barter-clone)
-	* [:camera: Screenshots](#camera-screenshots)
-	* [:signal_strength: Technologies](#signal_strength-technologies)
-    * [:cool: Live-Solution](#cool-live-solution)
-	* [:envelope: Contact](#envelope-contact)
-    * [:pen: Contributors](#pen-contributors)
+- [Barter-Clone](#barter-clone)
+	- [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
+	- [:camera: Screenshots](#camera-screenshots)
+	- [:signal\_strength: Technologies](#signal_strength-technologies)
+	- [:cool: Live-Solution](#cool-live-solution)
+	- [:envelope: Contact](#envelope-contact)
+	- [:pen: Contributors](#pen-contributors)
 
 ## :camera: Screenshots
 
@@ -28,6 +30,8 @@ You can read about our experience [here](https://kamet.hashnode.dev/portfolio-te
 ![Register Page](./assets/images/register.png)
 
 ![Login Page](./assets/images/login.png)
+
+![Forgot Password Page](./assets/images/forgotpassword.png)
 
 ![Student Ambassador Page](./assets/images/student.png)
 
@@ -40,8 +44,8 @@ You can read about our experience [here](https://kamet.hashnode.dev/portfolio-te
 
 ## :cool: Live-Solution
 
-* Here is the [Link](https://barter.me/) to the original site.
-* Here is the [Link](https://barter-clone-233.netlify.app/) to the live solution of the clone.
+* Here is the [link](https://barter.me/) to the original site.
+* Here is the [link](https://barter-clone-233.netlify.app/) to the clone.
 
 ## :envelope: Contact
 
