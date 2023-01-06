@@ -379,7 +379,7 @@ i {
     position: fixed;
     z-index: 5;
     top: 0;
-    left: 0;
+    left: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -398,13 +398,8 @@ i {
     display: block;
   }
 
-  li a {
-    font-size: 16px;
-    font-weight: 900;
-  }
-
-  .dark li a {
-    color: #000000;
+  .navlinks.active {
+    left: 0;
   }
 
   /* Styling Hamburger Section */
